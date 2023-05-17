@@ -1,0 +1,79 @@
+Framework Types:
+BDD - Behavioural Driven Development (ATDD) (A = Acceptence)
+TDD - Test Driven Development
+
+Acceptence Criteria: (Requirement)
+Validate : Requirement == actual functionalities
+
+Requirement:
+When user logged in to the system
+System should gtreets the user like 'Welcome <username>'
+
+Acceptence Criteria: (Behaviour of the system)
+1. Scenario: (Gherkin format)
+Given user in the homepage
+When user logged in to the system
+Then System greets 'Welcome <username>'
+
+Test Cases:
+Happy path/Positive Testing - When a valid user logged in, system should say 'Welcome <username>'
+Negative Testing - When invalid user try to logged in, system should not greets the user
+Negative Testing - When empty/null user try to logged in, system should not greets
+
+Bug - Funtionalities that do not go along with requirement
+Requirement != actual functionalities
+
+Smoke Test - Major / Base functionalities
+Regression Test - All available tests
+
+Gherkin format is a plain text format with pre-defined syntax at the beginning.
+
+Gherkin Syntax/Keyword:
+- Feature
+- Given (Pre-Defined status)
+- When (Action)
+- Then (Assertion / Validation)
+- And
+- Background
+- Scenario
+- Scenario Outline
+- Example
+- *
+
+Feature File: 
+Will start with Feature syntax and followed by Scenario/Scenario Outline with Given When Then (Gherkin Syntax) with .feature extension
+
+Step Definition: Actual code implementation
+Gerkin steps == java test steps
+
+BDD Frameworks: Cucumber, JBehave, Serenity
+
+POM.xml
+- cucumber-jvm
+- selenium
+- junit4/junit5
+- maven compiler
+
+	TDD 		|		BDD
+TestClass.java	| feature file.feature
+Test class		| Feature
+Test Case 		| Sceanrio
+Test Cases		| Sceanrio Outline
+Test Steps		| Given/When/Then
+						And/*	
+Groups			| Tags
+// or */*		| #
+Test Suite		| Test Runner.java					
+
+What is cucumber hook?
+@Before @After from io.cucumber
+
+What is the difference between throw and throws?
+throw will throw exception in method body
+throws is declaration of exception in method signature
+
+
+
+
+
+
