@@ -1,19 +1,19 @@
 Framework Types:
-BDD - Behavioural Driven Development (ATDD) (A = Acceptence)
+BDD - Behavioral Driven Development (ATDD) (A = Acceptance)
 TDD - Test Driven Development
 
-Acceptence Criteria: (Requirement)
+Acceptance Criteria: (Requirement)
 Validate : Requirement == actual functionalities
 
 Requirement:
 When user logged in to the system
-System should gtreets the user like 'Welcome <username>'
+System should greets the user like 'Welcome <userName>'
 
-Acceptence Criteria: (Behaviour of the system)
+Acceptance Criteria: (Behavior of the system)
 1. Scenario: (Gherkin format)
-Given user in the homepage
+Given user in the homePage
 When user logged in to the system
-Then System greets 'Welcome <username>'
+Then System greets 'Welcome <userName>'
 
 Test Cases:
 Happy path/Positive Testing - When a valid user logged in, system should say 'Welcome <username>'
@@ -57,8 +57,8 @@ POM.xml
 	TDD 		|		BDD
 TestClass.java	| feature file.feature
 Test class		| Feature
-Test Case 		| Sceanrio
-Test Cases		| Sceanrio Outline
+Test Case 		| Scenario
+Test Cases		| Scenario Outline
 Test Steps		| Given/When/Then
 						And/*	
 Groups			| Tags
@@ -68,11 +68,15 @@ Test Suite		| Test Runner.java
 What is cucumber hook?
 @Before @After from io.cucumber
 
+What is cucumberOptions?
+What is glue, dry-run?
+
 What is the difference between throw and throws?
 throw will throw exception in method body
 throws is declaration of exception in method signature
 
-
+Ref:
+https://www.baeldung.com/java-cucumber-hooks
 
 
 
