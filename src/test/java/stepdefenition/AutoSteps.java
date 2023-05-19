@@ -1,18 +1,13 @@
 package stepdefenition;
 
 import base.TestBase;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class AutoSteps extends TestBase{
-
-	@Given("homepage title is <{string}>")
-	public void homepage_title_is(String string) {
-		homePage.getAQuoteTitleValidation(string);
-	}
-
+	
 	@When("user insert zipcode <{string}>")
+	@When("user insert zipcode {string}")
 	public void user_insert_zipcode(String string) {
 		homePage.insertZipCode(string);
 	}
