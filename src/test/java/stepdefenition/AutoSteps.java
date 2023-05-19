@@ -16,6 +16,7 @@ public class AutoSteps extends TestBase{
 	@When("user clicks getAQuote button")
 	public void user_clicks_get_a_quote_button() {
 		homePage.clickGetQuoteBtn();
+		// This is step without params
 	}
 
 	@Then("user is in General-Info page")
