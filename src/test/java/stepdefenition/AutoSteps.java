@@ -10,7 +10,7 @@ public class AutoSteps extends TestBase{
 	@When("user insert zipcode {string}")
 	public void user_insert_zipcode(String string) {
 		homePage.insertZipCode(string);
-		//double steps defined in single method
+		// this is an example of how to define two feature steps in a single method
 	}
 
 	@When("user clicks getAQuote button")
